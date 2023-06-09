@@ -2,7 +2,7 @@ import React from 'react'
 
 function Blog() {
   return (
-    <div>Blog</div>
+    <div className='border border-1 border-red-300'>Blog</div>
   )
 }
 

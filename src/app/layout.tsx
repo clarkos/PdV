@@ -17,14 +17,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className='container m-auto'>
         <header>
           <Navbar />
         </header>
         <main>
-          {children}
+          <div>
+            {children}
+          </div>
         </main>
-        <Footer />
+        <footer>
+          <Footer/>
+        </footer>
       </body>
     </html>
   )

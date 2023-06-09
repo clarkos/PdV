@@ -3,10 +3,10 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="m-auto flex border-2 border-white-800 container">
+    <div className="m-auto flex border-2 border-white-800 container font-sans">
 
       <div className="w-2/5 ml-4">
-        <div className="flex m-1">
+        <div className="flex m-1 text-xs">
           <p>Siganos en</p>
           <ul className="flex pl-1">
             {["fb", "tw", "yt"].map((e, index) => (
@@ -29,7 +29,7 @@ function Navbar() {
       </div>
       
       <div className="w-2/5 flex flex-col mr-4 ">
-        <div className="m-1 flex justify-end">
+        <div className="m-1 flex justify-end text-xs">
           <p className="pr-2">Search</p>
           <input type="text" placeholder="mensaje o categoria" />
         </div>
