@@ -1,8 +1,5 @@
-import React from 'react';
 import Navigation from '@/components/Navigation';
 import SocialContact from './SocialContact';
-import Image from 'next/image';
-import { Menu } from "lucide-react";
 import MobileMenu from './MobileMenu';
 
 const Navbar = () => {

@@ -15,20 +15,22 @@ const Article: React.FC<ArticleProps> = ({
 }) => {
 
   return (
-    <div>
-      <Card>
-        <CardHeader>
-          <CardTitle>{data.title}</CardTitle>
+    <article className=''>
+      <Card className='flex flex-col'>
+        <CardHeader className='flex-row justify-between items-center'>
+          <CardTitle className=' font-bold break-before-auto'>
+            {data.title}
+          </CardTitle>
           <CardDescription>{data.id}</CardDescription>
         </CardHeader>
         <CardContent>
           {data.body}
         </CardContent>
         <CardFooter>
-          <p>{data.userId}</p>
+          <p className='text-xs font-light'>by User {data.userId}</p>
         </CardFooter>
       </Card>
-    </div>
+    </article>
   )
 }
 
