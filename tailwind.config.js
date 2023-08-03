@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      // backgroundImage: {
+      //   menuBottom: "url('/menuBg.png')",
+      // },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

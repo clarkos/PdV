@@ -15,7 +15,7 @@ const Navigation = () => {
   ]
 
   return (
-    <div className='flex justify-between'>
+    <div className='sticky top-0 flex justify-between'>
       <ul className='flex items-center justify-start space-x-4'>
         {menu1.map((item, index) => (
           <li key={index}>
@@ -26,7 +26,13 @@ const Navigation = () => {
         ))}
       </ul>
       <div>
-        <Image src="/logo.png" alt="logo" width={100} height={100} />
+        <Image 
+          src="/logo-banner.png" 
+          alt="logo" 
+          width={125} 
+          height={150} 
+          className="relative top-[-25px] mb-[-65px]"
+        />
       </div>
       <ul className='flex items-center justify-end space-x-4'>
         {menu2.map((item, index) => (

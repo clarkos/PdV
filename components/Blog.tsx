@@ -1,9 +1,4 @@
-"use client"
-
-import { useState } from 'react'
 import Article from './ui/Article'
-
-
 
 const Blog = async () => {
 
@@ -15,8 +10,8 @@ const Blog = async () => {
   return (
     <div>
       <h1>Ultimas novedades</h1>
-      {posts.map((post) => (
-        <Article data={post} />
+      {posts.map(post => (
+        <Article data={post} key={post.id}/>
       ))}
     </div>
   )
