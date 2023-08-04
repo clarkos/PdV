@@ -16,18 +16,18 @@ const Article: React.FC<ArticleProps> = ({
 
   return (
     <article className=''>
-      <Card className='flex flex-col'>
-        <CardHeader className='flex-row justify-between items-center'>
-          <CardTitle className=' font-bold break-before-auto'>
+      <Card className='flex flex-col h-[250px] overflow-x-auto'>
+        <CardHeader className='flex-col items-start'>
+          <CardTitle className='font-bold break-before-auto'>
             {data.title}
           </CardTitle>
-          <CardDescription>{data.id}</CardDescription>
+          <CardDescription>{data.id} by User {data.userId}</CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className='text-xs'>
           {data.body}
         </CardContent>
         <CardFooter>
-          <p className='text-xs font-light'>by User {data.userId}</p>
+          <p className='text-xs font-light'></p>
         </CardFooter>
       </Card>
     </article>
