@@ -16,9 +16,10 @@ module.exports = {
       },
     },
     extend: {
-      // backgroundImage: {
-      //   menuBottom: "url('/menuBg.png')",
-      // },
+      backgroundImage: {
+        'hero-pattern': "url('/hero.jpg')",
+        // 'footer-texture': "url('/img/footer-texture.png')",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -74,6 +75,9 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
+    fontFamily: {
+      cinzel: ['Cinzel'],
+    }
   },
   plugins: [require("tailwindcss-animate")],
 }
