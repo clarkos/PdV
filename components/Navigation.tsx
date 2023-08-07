@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+// import React from 'react'
 
 const Navigation = () => {
 
@@ -30,7 +30,7 @@ const Navigation = () => {
           src="/logo-banner.png" 
           alt="logo" 
           width={125} 
-          height={150} 
+          height={150}
           className="relative top-[-25px] mb-[-65px]"
         />
       </div>
