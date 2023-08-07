@@ -4,19 +4,19 @@ import React from 'react'
 
 const SocialContact = () => {
 
-  const social = [
+  let social = [
     {
       name: "Facebook",
-      icon: "/fb.svg"
+      icon: "fb.svg"
     },{
       name: "Instagram",
-      icon: "/instagram.svg"
+      icon: "instagram.svg"
     },{
       name: "YouTube",
-      icon: "/youtube.svg"
+      icon: "youtube.svg"
     },{
       name: "X (Twitter)",
-      icon: "/twitter.svg"
+      icon: "twitter.svg"
     }
   ]
 
@@ -29,11 +29,9 @@ const SocialContact = () => {
   return (
     <div className='flex justify-between text-xs font-bold relative top-6'>
       <ul className='flex items-center justify-start space-x-4'>
-        {social.map((item, index) => (
-          <li key={index}>
-            <Link href="#">
-              <img src={item.icon} alt={item.name} width={15} height={15}/>
-            </Link>
+        {social.map((item) => (
+          <li key={item.name} className="z-40 cursor-pointer">
+              <img src={`/${item.icon}`} alt={item.name} width={15} />
           </li>
         ))}
       </ul>
