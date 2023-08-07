@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 const DayVerse = () => {
 
   return (
-    <section className="h-[150px] w-[80vw] flex flex-col justify-center items-center border border-red-900 rounded-md">
+    <section className="h-[150px] w-[90vw] mx-8 text-white
+      flex flex-col justify-center items-center bg-orange-950 rounded-md">
       <div className="text-2xl font-extrabold">
         DayVerse
       </div>

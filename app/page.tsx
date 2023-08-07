@@ -5,7 +5,7 @@ import Video from '@/components/Video'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-full flex-col items-center justify-between p-24">
+    <main className="flex w-full flex-col items-center justify-between px-6">
       <header>
       <Hero />
       </header>

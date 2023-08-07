@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+
 
 const SocialContact = () => {
 
-  let social = [
+  const social = [
     {
       name: "Facebook",
       icon: "fb.svg"
@@ -22,21 +22,21 @@ const SocialContact = () => {
 
   const contacto = [
     "Mar del Plata",
-    "Buenos Aires",
+    "Bs As",
     "Argentina",
   ]
 
   return (
-    <div className='flex justify-between text-xs font-bold relative top-6'>
+    <div className='flex justify-between text-xs font-bold relative top-3'>
       <ul className='flex items-center justify-start space-x-4'>
         {social.map((item) => (
-          <li key={item.name} className="z-40 cursor-pointer">
-              <img src={`/${item.icon}`} alt={item.name} width={15} />
+          <li key={item.name} className="z-40 cursor-pointer fill-white">
+              <img src={`/${item.icon}`} alt={item.name} className='w-3'/>
           </li>
         ))}
       </ul>
 
-      <ul className='flex items-center justify-end space-x-4'>
+      <ul className='flex items-center justify-end space-x-2'>
         {contacto.map((item, index) => (
           <li key={index}>
             {item}

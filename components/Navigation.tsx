@@ -5,39 +5,40 @@ import Link from 'next/link'
 const Navigation = () => {
 
   const menu1 = [
-    "about",
-    "blog",
+    {name: "Ministerio", url: "/about"},
+    {name: "Contacto", url: "/contact"}
   ]
   
   const menu2 = [
-    "sermons",
-    "contact",
+    "Mensajes",
+    "Blog",
   ]
 
   return (
-    <div className='sticky top-0 flex justify-between'>
-      <ul className='flex items-center justify-start space-x-4'>
+    <div className='flex justify-between items-start text-sm h-[5rem]'>
+      <ul className='flex items-center justify-start space-x-4 pt-4'>
         {menu1.map((item, index) => (
           <li key={index}>
-            <Link href={"#"} className="pb-3 hover:border-b hover:border-red-500">
-              {item}
+            <Link href={item.url} className="pb-2 hover:border-b hover:border-white">
+              {item.name}
             </Link>
           </li>
         ))}
       </ul>
-      <div>
+      <div className="relative top-[-1.5rem]">
+        <Link href="/">
         <Image 
           src="/logo-banner.png" 
           alt="logo" 
-          width={125} 
-          height={150}
-          className="relative top-[-25px] mb-[-65px]"
-        />
+          width={95} 
+          height={120}
+          className='drop-shadow-lg'
+        /></Link>
       </div>
-      <ul className='flex items-center justify-end space-x-4'>
+      <ul className='flex items-center justify-start space-x-4 pt-4'>
         {menu2.map((item, index) => (
           <li key={index}>
-            <Link href={"#"} className="pb-3 hover:border-b hover:border-red-500">
+            <Link href={"#"} className="pb-2 hover:border-b hover:border-white">
               {item}
             </Link>
           </li>
