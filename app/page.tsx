@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <main className="flex w-full flex-col items-center justify-between px-6">
       <header>
-      <Hero />
+        <Hero />
       </header>
       <section>
-      <DayVerse />
+        <DayVerse />
       </section>
       <section>
         <Video />
